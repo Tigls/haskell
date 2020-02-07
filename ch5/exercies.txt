@@ -1,0 +1,57 @@
+Multiple Choice
+  1. c
+  2. a 
+  3. b
+  4. c
+
+Determine the type
+  a. 54 :: Num a => a
+  b. (0, "doge") :: Num a => (a, [Char]) otherwise :: (Integer, [Char])
+  c. (0, "doge") :: (Integer, [Char])
+  d. False :: Bool
+  e. 5 :: Int
+  f. False :: Bool 
+
+  2. w :: Num a => a otherwise :: Integer
+  3. z :: Num a => a -> a
+  4. f :: Fractional a => a otherwise :: Double 
+  5. z :: [Char]
+
+Does it compile
+
+  1. No, applies number to a number. wahoo = bignum $ 10
+  2. Yes
+  3. No, applies number to a number.
+  4. No, c not in scope.
+
+Type variable or specific type constructor
+  2. zed - fully, Blah and Zed - concrete 
+  3. b - concrete, a - fully, C - concrete 
+  4. f - fully, g - fully, C - concrete
+
+Write a type signature
+  1. functionH :: [a] -> a
+  2. functionC :: Ord a => a -> a -> Bool
+  3. functionS :: (a, b) -> b  
+
+Given a type write a function
+  1. i x = x
+  2. c a b = a
+  3. c'' b a = b
+  4. c' a b = b
+  5. r = tail, r = take n where n = 5
+  6. co bToC aToB a = bToC (aTob a)
+  7. a aToC a = a
+  8. a' aToB a = aToB b 
+
+Fix it
+  1. fstString :: [Char] -> [Char]
+       where y = "Somewhere"
+  2. (x < y)
+  3. print (1 + 2), putStrLn "10", print (negate (-1))
+
+Type-Kwon-do
+  1. h x = f (g x)
+  2. e x = w (q x) 
+  3. xform (x, y) = (xz x, yz z)
+  4. munge f g x = fst (g (f x))

@@ -1,0 +1,52 @@
+1.Type Matching p 125
+  a - c
+  b - d
+  c - b
+  d - a
+  e - e
+
+2. Type Arguments p134
+  1. a
+  2. d
+  3. d
+  4. c
+  5. a
+  6. e
+  7. d ?
+  let kessel :: (Ord a, Num b) => a -> b -> a; kessel = undefined
+  kessel 1 2 :: (Num a, Ord a) => a
+  From the original type signature Ord is required.
+  From the application we learn that a is also constrained by the typeclass Num.
+  Since they are mutually exclusive we need both in the constraint.
+  8. a
+  9. c
+
+3. Parametricity p140
+
+  id :: a -> a
+  id x = x
+
+  f :: a -> a -> a
+  f x y = x
+  or
+  f x y = y
+
+  g :: a -> b -> b
+  g x y = y
+  
+4. Apply Yourself p145
+  1.(++) :: [a] -> [a] -> [a]
+    conc x = x ++ " yo" 
+    :: [Char] -> [Char]
+  2. (8) :: Num a => a -> a -> a
+     myMult x = (x / 3) * 5
+     :: Fractional a => a -> a
+  3. take :: Int -> [a] -> [a]
+     myTake x = take x "hey you" 
+     :: Int -> [Char]
+  4. (>) :: Ord a => a -> a -> Bool
+     myCom x = x > (length [1..10])
+     :: Int -> Bool
+  5. (<) :: Ord a => a -> a -> a
+     myAlph x = x < 'z'
+     :: Char -> Bool 
