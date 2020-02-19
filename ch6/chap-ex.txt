@@ -1,0 +1,21 @@
+Multiple Choice 
+  1. a - c
+  2. a,b
+  3. a
+  4. c
+  5. a
+
+Match the types
+  1) 1 Num ok, i :: a - fails
+  2) 1.0 Float ok, Num -- fails
+  3) 1.0 Float ok, Fractional - ok 
+  4) 1.0 Float ok, RealFrac - ok - instance of Float
+  5) x, f x :: a -> a - ok, Ord ok
+  6) x, f x Int -> - ok
+  7) sigmund :: a -> a - fails, since myX is Int
+  8) sigmund :: Num a => a -> a - fails
+  9) jung :: before Ord => a -> a then [Int] -> Int - ok, both compiles
+ 10) young :: before [Char] -> Char then Ord a => [a] -> a - fails
+ 11) signifier :: before [Char] -> Char then Ord a => [a] -> fails,
+
+
